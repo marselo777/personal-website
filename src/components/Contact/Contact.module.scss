@@ -1,0 +1,29 @@
+.root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 36px;
+}

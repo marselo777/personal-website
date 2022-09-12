@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}

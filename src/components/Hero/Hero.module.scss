@@ -1,0 +1,25 @@
+.heroTitle {
+    font-size: 50px;
+    line-height: 152%;
+    font-weight: 700;
+    color: var(--dark-green);
+    background: linear-gradient(rgb(176, 251, 188), rgb(130, 249, 161)) text;
+    max-width: 520px;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.actions {
+    display: flex;
+}
+
+.helloButton {
+    margin-right: 12px;
+}

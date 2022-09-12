@@ -9,16 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.4",
+    "classnames": "^2.3.1",
+    "framer-motion": "^7.0.0",
+    "gray-matter": "^4.0.3",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.0",
+    "sass": "^1.54.5"
   },
   "devDependencies": {
     "@types/node": "18.7.8",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
     "eslint": "8.22.0",
+    "eslint-config-eslint": "^7.0.0",
     "eslint-config-next": "12.2.5",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.27.1",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "prettier": "^2.7.1",
     "typescript": "4.7.4"
   }
 }

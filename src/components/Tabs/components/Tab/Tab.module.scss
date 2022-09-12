@@ -1,0 +1,29 @@
+.root {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: .3s;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: var(--tab-height);
+    padding: 8px 20px;
+    border-left: 2px solid var(--indicator);
+    background-color: transparent;
+    color: var(--slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--green);
+        background-color: var(--skill);
+    }
+}
+
+.active {
+    color: var(--green);
+}

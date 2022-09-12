@@ -1,0 +1,22 @@
+.root {
+    display: inline-flex;
+    outline: none;
+    min-width: 64px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    color: var(--white);
+    min-height: 36px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.default {
+    background-color: var(--black);
+    border: 1px solid var(--white);
+}
+
+.primary {
+    background-color: var(--gray);
+    border: none;
+    color: var(--black);
+}

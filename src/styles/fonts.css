@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Inter"),
+        url("/fonts/Inter/inter-regular.ttf") format("ttf"),
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Inter"),
+        url("/fonts/Inter/inter-semibold.ttf") format("ttf"),
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"),
+        url("/fonts/Roboto/Roboto-Regular.ttf") format("ttf"),
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Roboto"),
+        url("/fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
+  }

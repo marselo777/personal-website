@@ -3,13 +3,13 @@ export interface SocialMediaLink {
     url: string;
 }
 
-interface Links {
+interface Metadata {
     email: string;
     socialMedia: SocialMediaLink[];
 }
 
-export const links: Links = {
-    email: "evg.frolov777@gmail.com",
+export const metadata: Metadata = {
+    email: "yevgenii.frolov@gmail.com",
     socialMedia: [
         {
             name: "Git",

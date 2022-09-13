@@ -10,7 +10,7 @@ export type TypographyVariant =
     | "title";
 export type TypographyComponent = keyof HTMLElementTagNameMap;
 
-export interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
+export interface TypographyProps extends React.AllHTMLAttributes<HTMLElement> {
     variant?: TypographyVariant;
     component?: TypographyComponent;
     children: React.ReactNode;

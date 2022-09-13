@@ -5,9 +5,9 @@ import * as icons from "../icons";
 import { IconProps } from "./Icon.types";
 
 export const Icon = (props: IconProps) => {
-    const { iconName } = props;
+    const { iconName, className } = props;
 
     const IconComponent = icons[iconName];
 
-    return <IconComponent />;
+    return <IconComponent className={className} />;
 };

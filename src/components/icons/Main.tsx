@@ -1,8 +1,12 @@
 import React from "react";
 
-export const Main = () => {
+import { IconProps } from "./icons.types";
+
+export const Main = (props: IconProps) => {
+    const { className } = props;
     return (
         <svg
+            className={className}
             width="120"
             height="40"
             viewBox="0 0 151 63"

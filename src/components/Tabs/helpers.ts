@@ -1,4 +1,4 @@
-import { useCallback, useLayoutEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export const useMediaQuery = (width: number) => {
     const [targetReached, setTargetReached] = useState(false);
@@ -11,7 +11,7 @@ export const useMediaQuery = (width: number) => {
         }
     }, []);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const media = window.matchMedia(`(max-width: ${width}px)`);
         media.addEventListener("change", updateTarget);
 

@@ -1,5 +1,23 @@
 .root {
+    display: flex;
+    flex-direction: column;
     & li {
+        display: inline-flex;
         margin-bottom: var(--space-4);
+
+        & > a {
+            transition: transform .2s;
+            &:hover {
+                transform: translateY(-3px);
+            }
+        }
+        
     }
+}
+
+.icon {
+    & path {
+        fill: currentColor;
+    }
+ 
 }

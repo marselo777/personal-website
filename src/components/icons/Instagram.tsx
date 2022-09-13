@@ -1,8 +1,12 @@
 import React from "react";
 
-export const Instagram = () => {
+import { IconProps } from "./icons.types";
+
+export const Instagram = (props: IconProps) => {
+    const { className } = props;
     return (
         <svg
+            className={className}
             width="24"
             height="24"
             viewBox="0 0 32 32"

@@ -16,7 +16,13 @@ export const Hero = () => {
                 Github, and take shots on Dribbble.
             </p>
             <div>
-                <Button className={styles.helloButton}>Say Hello</Button>
+                <Button
+                    component="a"
+                    href="mailto:yevgenii.frolov@gmail.com"
+                    className={styles.helloButton}
+                >
+                    Say Hello
+                </Button>
                 <Button variant="primary">Resume</Button>
             </div>
         </section>

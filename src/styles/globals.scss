@@ -28,6 +28,9 @@ a {
   text-decoration: none;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 2px;
+  &:hover {
+    color: var(--green);
+  }
 }
 
 a:active,

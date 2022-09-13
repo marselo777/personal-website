@@ -1,6 +1,10 @@
-export const NodeJS = () => {
+import { IconProps } from "./icons.types";
+
+export const NodeJS = (props: IconProps) => {
+    const { className } = props;
     return (
         <svg
+            className={className}
             width="60"
             height="60"
             viewBox="0 0 128 128"

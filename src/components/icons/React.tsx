@@ -1,6 +1,10 @@
-export const React = () => {
+import { IconProps } from "./icons.types";
+
+export const React = (props: IconProps) => {
+    const { className } = props;
     return (
         <svg
+            className={className}
             width="60"
             height="60"
             viewBox="0 0 107 107"

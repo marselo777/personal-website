@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 import { Icon } from "components/Icon";
@@ -14,9 +13,9 @@ export const SocialSideBar = (props: SocialSideBarProps) => {
             <ul className={styles.root}>
                 {socialLinks.map(({ name, url }) => (
                     <li key={name}>
-                        <Link href={url}>
-                            <Icon iconName={name} />
-                        </Link>
+                        <a href={url}>
+                            <Icon iconName={name} className={styles.icon} />
+                        </a>
                     </li>
                 ))}
             </ul>

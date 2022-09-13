@@ -1,8 +1,12 @@
 import React from "react";
 
-export const Twitter = () => {
+import { IconProps } from "./icons.types";
+
+export const Twitter = (props: IconProps) => {
+    const { className } = props;
     return (
         <svg
+            className={className}
             width="24"
             height="24"
             viewBox="0 0 32 32"

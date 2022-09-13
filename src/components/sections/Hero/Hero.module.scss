@@ -1,5 +1,5 @@
 .heroTitle {
-    font-size: 50px;
+    font-size: clamp(40px, 8vw, 50px);
     line-height: 152%;
     font-weight: 700;
     color: var(--dark-green);

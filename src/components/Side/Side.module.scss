@@ -1,0 +1,28 @@
+.root {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.left {
+    left: 40px;
+    right: auto;
+
+    @media (max-width: 1080px) {
+        left: 20px;
+    }
+}
+
+.right {
+    left: auto;
+    right: 40px;
+
+    @media (max-width: 1080px) {
+        right: 20px;
+    }
+}

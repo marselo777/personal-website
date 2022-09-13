@@ -4,11 +4,11 @@ import path from "path";
 import matter from "gray-matter";
 import { NextPage } from "next";
 
-import { About } from "components/About";
-import { Contact } from "components/Contact";
-import { Experience } from "components/Experience";
-import { Hero } from "components/Hero";
-import { Skills } from "components/Skills";
+import { About } from "components/sections/About";
+import { Contact } from "components/sections/Contact";
+import { Experience } from "components/sections/Experience";
+import { Hero } from "components/sections/Hero";
+import { Skills } from "components/sections/Skills";
 import { Layout } from "layouts/Layout";
 
 const Home: NextPage = ({ jobsList }: any) => {

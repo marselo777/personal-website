@@ -15,9 +15,7 @@ export const Layout = (props: LayoutProps) => {
     return (
         <>
             <Header routes={routes} />
-            <div className={styles.rightSideBar}>
-                <SocialSideBar socialLinks={links.socialMedia} />
-            </div>
+            <SocialSideBar socialLinks={links.socialMedia} />
             <div></div>
             <main className={styles.main}>{children}</main>
         </>

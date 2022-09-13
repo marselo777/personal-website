@@ -16,7 +16,9 @@ export const Experience = (props: ExperienceProps) => {
 
     return (
         <section className={styles.root} id="experience">
-            <h1 className="title">Where I have worked</h1>
+            <Typography component="h1" variant="title">
+                Where I have worked
+            </Typography>
             <div className={styles.tabs}>
                 <div className={styles.tabsList}>
                     <Tabs activeTab={activeTab} onTabChange={handleTabChange}>

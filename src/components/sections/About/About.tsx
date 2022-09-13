@@ -8,9 +8,11 @@ import styles from "./About.module.scss";
 export const About = () => {
     return (
         <section id="about" className={styles.root}>
-            <h1 className="title">About</h1>
+            <Typography component="h1" variant="title">
+                About
+            </Typography>
             <div className={styles.about}>
-                <div>
+                <div className={styles.cards}>
                     <Card
                         title="Front-End"
                         description="I develop frontend application on the React and Typescript"

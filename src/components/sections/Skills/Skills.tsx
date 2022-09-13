@@ -10,7 +10,7 @@ import styles from "./Skills.module.scss";
 export const Skills = () => {
     return (
         <section className={styles.root}>
-            <Typography variant="h1" className="title">
+            <Typography variant="title" component="h1">
                 Skills
             </Typography>
             <div className={styles.skills}>

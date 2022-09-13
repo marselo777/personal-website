@@ -6,7 +6,8 @@ export type TypographyVariant =
     | "h5"
     | "body1"
     | "body2"
-    | "caption";
+    | "caption"
+    | "title";
 export type TypographyComponent = keyof HTMLElementTagNameMap;
 
 export interface TypographyProps extends React.HTMLAttributes<HTMLElement> {

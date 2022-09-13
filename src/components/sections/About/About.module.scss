@@ -1,0 +1,29 @@
+.root {
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    color: var(--gray);
+}
+
+.cards {
+    @media (max-width: 768px) {
+        margin-bottom: 24px;
+    }
+}
+.card {
+    margin-bottom: 24px;
+}

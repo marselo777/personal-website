@@ -1,5 +1,6 @@
 import React from "react";
 
+import { HamburgerMenu } from "components/HamburgerMenu";
 import { Icon } from "components/Icon";
 import { Nav } from "components/Nav";
 
@@ -12,6 +13,7 @@ export const Header = (props: HeaderProps) => {
         <header className={styles.root}>
             <Icon iconName="Main" />
             <Nav links={routes} />
+            <HamburgerMenu links={routes} />
         </header>
     );
 };

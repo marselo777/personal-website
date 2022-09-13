@@ -7,7 +7,7 @@ import { NavProps } from "./Nav.types";
 export const Nav = (props: NavProps) => {
     const { links } = props;
     return (
-        <nav>
+        <nav className={styles.root}>
             <ul>
                 {links.map(({ name, url }) => (
                     <li key={url} className={styles.linkItem}>

@@ -89,17 +89,19 @@
     width: min(75vw, 400px);
     height: 100vh;
     outline: 0px;
-    background-color: var(--divider);
+    background-color: var(--skill);
     box-shadow: -10px 0px 30px -15px var(--shadow);
     z-index: 9;
-    transform: translateX(0vw);
-    visibility: visible;
+    transform: translateX(100vw);
+    visibility: hidden;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 }
 
 .dividerOpen {
-    transform: translateX(100vw);
+    display: flex;
+    visibility: visible;
+    transform: translateX(0vw);
 }
 
 .linksList {

@@ -26,7 +26,7 @@ export const About = () => {
                     />
                 </div>
                 <div className={styles.description}>
-                    <Typography variant="h1">
+                    <Typography variant="h1" className={styles.title}>
                         Hello! My name is Evgenii Frolov
                     </Typography>
                     <Typography>

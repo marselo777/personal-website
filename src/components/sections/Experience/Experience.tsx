@@ -8,8 +8,8 @@ import { ExperienceProps } from "./Experience.types";
 
 export const Experience = (props: ExperienceProps) => {
     const { jobsList } = props;
-
     const [activeTab, setActiveTab] = useState(0);
+
     const handleTabChange = (index: number) => {
         setActiveTab(index);
     };
@@ -17,7 +17,7 @@ export const Experience = (props: ExperienceProps) => {
     return (
         <section className={styles.root} id="experience">
             <Typography component="h1" variant="title">
-                Where I have worked
+                Where I've worked
             </Typography>
             <div className={styles.tabs}>
                 <div className={styles.tabsList}>
@@ -28,12 +28,6 @@ export const Experience = (props: ExperienceProps) => {
                             </Tab>
                         ))}
                     </Tabs>
-                    <div
-                        className={styles.higlight}
-                        style={{
-                            transform: `translateY(calc(${activeTab} * var(--tab-height)))`,
-                        }}
-                    />
                 </div>
                 <div>
                     {jobsList.map(

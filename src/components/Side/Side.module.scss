@@ -1,8 +1,19 @@
 .root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 40px;
     position: fixed;
     bottom: 0;
     z-index: 10;
+    &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: var(--line);
+    }
 
     @media (max-width: 768px) {
         display: none;

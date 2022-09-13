@@ -6,7 +6,7 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    width: 100%;
+    min-width: var(--tab-width);
     height: var(--tab-height);
     padding: 8px 20px;
     border-left: 2px solid var(--indicator);
@@ -17,6 +17,12 @@
     text-align: left;
     white-space: nowrap;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        border-left: none;
+        border-bottom: 2px solid var(--indicator);
+        justify-content: center;
+    }
 
     &:hover {
         color: var(--green);

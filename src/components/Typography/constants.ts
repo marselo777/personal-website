@@ -9,4 +9,5 @@ export const variantMapping: Record<TypographyVariant, TypographyComponent> = {
     body1: "p",
     body2: "p",
     caption: "span",
+    title: "h1",
 };

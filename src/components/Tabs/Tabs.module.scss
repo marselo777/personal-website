@@ -4,6 +4,10 @@
     transition: 2s;
     flex-direction: column;
     position: relative;
+    overflow: auto;
+    ::-webkit-scrollbar {
+      display: none;
+    }
     @media (max-width: 768px) {
         flex-direction: row;
         margin-bottom: 24px;

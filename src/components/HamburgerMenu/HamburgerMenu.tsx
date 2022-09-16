@@ -1,6 +1,6 @@
 import cn from "classnames";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./HamburgerMenu.module.scss";
 import { HamburgerMenuProps } from "./HamburgerMenu.types";
@@ -12,6 +12,16 @@ export const HamburgerMenu = (props: HamburgerMenuProps) => {
     const toogle = () => {
         setOpen(!isOpen);
     };
+
+    useEffect(() => {
+        const body = document.querySelector("body");
+        if (isOpen) {
+            body?.classList.add("blur");
+        } else {
+            body?.classList.remove("blur");
+        }
+    }, [isOpen]);
+
     return (
         <div className={cn(styles.root)}>
             <div className={styles.hamburgerBox} onClick={toogle}>

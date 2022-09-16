@@ -20,15 +20,13 @@ export const Experience = (props: ExperienceProps) => {
                 Where I've worked
             </Typography>
             <div className={styles.tabs}>
-                <div className={styles.tabsList}>
-                    <Tabs activeTab={activeTab} onTabChange={handleTabChange}>
-                        {jobsList.map((job, idx) => (
-                            <Tab key={job.date} active={idx === activeTab}>
-                                {job.company}
-                            </Tab>
-                        ))}
-                    </Tabs>
-                </div>
+                <Tabs activeTab={activeTab} onTabChange={handleTabChange}>
+                    {jobsList.map((job, idx) => (
+                        <Tab key={job.date} active={idx === activeTab}>
+                            {job.company}
+                        </Tab>
+                    ))}
+                </Tabs>
                 <div>
                     {jobsList.map(
                         ({ company, content, date, range, title }, idx) => (

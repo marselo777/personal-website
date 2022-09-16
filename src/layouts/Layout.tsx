@@ -1,5 +1,5 @@
 import { metadata, routes } from "config";
-import React, { useEffect } from "react";
+import React from "react";
 
 import { ContactsSidebar } from "components/ContactsSideBar";
 import { Header } from "components/Header";
@@ -11,14 +11,14 @@ import { LayoutProps } from "./Layout.types";
 export const Layout = (props: LayoutProps) => {
     const { children } = props;
 
-    useEffect(() => {}, []);
-
     return (
         <>
             <Header routes={routes} />
             <SocialSideBar socialLinks={metadata.socialMedia} />
             <ContactsSidebar email={metadata.email} />
-            <main className={styles.main}>{children}</main>
+            <main id="content" className={styles.main}>
+                {children}
+            </main>
         </>
     );
 };

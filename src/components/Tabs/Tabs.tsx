@@ -1,5 +1,5 @@
 import cn from "classnames";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import { useMediaQuery } from "./helpers";
 import styles from "./Tabs.module.scss";
@@ -7,6 +7,7 @@ import { TabsProps } from "./Tabs.types";
 
 export const Tabs = (props: TabsProps) => {
     const { children, onTabChange, activeTab } = props;
+    const tabsRef = useRef<HTMLDivElement>(null);
 
     const isMobile = useMediaQuery(768);
     const transform = isMobile
@@ -21,8 +22,19 @@ export const Tabs = (props: TabsProps) => {
         return <div onClick={() => handleTabClick(idx)}>{child}</div>;
     });
 
+    useEffect(() => {
+        if (tabsRef.current && isMobile) {
+            const { left } =
+                tabsRef.current.children[activeTab].getBoundingClientRect();
+            tabsRef.current.scrollTo({
+                behavior: "smooth",
+                left,
+            });
+        }
+    }, [activeTab, isMobile]);
+
     return (
-        <div className={cn(styles.root)}>
+        <div className={cn(styles.root)} ref={tabsRef}>
             {labels}
             <div
                 className={styles.higlight}

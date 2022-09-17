@@ -3,6 +3,7 @@ import path from "path";
 
 import matter from "gray-matter";
 import { NextPage } from "next";
+import Head from "next/head";
 
 import { About } from "components/sections/About";
 import { Contact } from "components/sections/Contact";
@@ -15,6 +16,9 @@ import { BaseLayout } from "layouts/BaseLayout";
 const Home: NextPage = ({ jobsList }: any) => {
     return (
         <GlobalConfigProvider>
+            <Head>
+                <title>Evgenii Frolov</title>
+            </Head>
             <BaseLayout>
                 <Hero />
                 <About />

@@ -9,17 +9,20 @@ import { Contact } from "components/sections/Contact";
 import { Experience } from "components/sections/Experience";
 import { Hero } from "components/sections/Hero";
 import { Skills } from "components/sections/Skills";
-import { Layout } from "layouts/Layout";
+import { GlobalConfigProvider } from "context/GlobalConfig";
+import { BaseLayout } from "layouts/BaseLayout";
 
 const Home: NextPage = ({ jobsList }: any) => {
     return (
-        <Layout>
-            <Hero />
-            <About />
-            <Skills />
-            <Experience jobsList={jobsList} />
-            <Contact />
-        </Layout>
+        <GlobalConfigProvider>
+            <BaseLayout>
+                <Hero />
+                <About />
+                <Skills />
+                <Experience jobsList={jobsList} />
+                <Contact />
+            </BaseLayout>
+        </GlobalConfigProvider>
     );
 };
 

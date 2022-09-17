@@ -1,8 +1,5 @@
 .root {
     display: block;
-    @media (max-width: 768px) {
-        display: none;
-    }
 }
 .linkItem {
     display: inline-block;

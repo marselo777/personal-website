@@ -29,7 +29,10 @@ export const Experience = (props: ExperienceProps) => {
                 </Tabs>
                 <div>
                     {jobsList.map(
-                        ({ company, content, date, range, title }, idx) => (
+                        (
+                            { company, content, date, range, title, url },
+                            idx
+                        ) => (
                             <TabPanel key={date} active={activeTab === idx}>
                                 <div className={styles.tabHeader}>
                                     <Typography
@@ -41,6 +44,9 @@ export const Experience = (props: ExperienceProps) => {
                                     <Typography
                                         className={styles.company}
                                         variant="h3"
+                                        component="a"
+                                        href={url}
+                                        target="_blank"
                                     >
                                         {"\u00A0"}@{"\u00A0"}
                                         {company}

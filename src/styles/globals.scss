@@ -19,6 +19,7 @@ body {
   word-wrap: break-word;
   width: 100%;
   &.blur {
+    overflow: hidden;
     #content > * {
       filter: blur(5px) brightness(0.7);
           transition: var(--transition);
@@ -62,6 +63,11 @@ h1 {
   padding: 0;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
 }
 
 img {

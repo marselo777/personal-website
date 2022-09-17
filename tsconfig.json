@@ -24,6 +24,8 @@
       "mappings/*": ["mappings/*"],
       "services/*": ["services/*"],
       "templates/*": ["templates/*"],
+      "context/*": ["context/*"],
+      "hooks/*": ["hooks/*"],
   },   
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

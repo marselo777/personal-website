@@ -15,7 +15,7 @@ export const About = () => {
                 <div className={styles.cards}>
                     <Card
                         title="Front-End"
-                        description="I develop frontend application on the React and Typescript"
+                        description="I develop frontend applications on the React and Typescript"
                         iconName="Code"
                         className={styles.card}
                     />

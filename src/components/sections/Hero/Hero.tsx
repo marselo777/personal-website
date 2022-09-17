@@ -1,19 +1,23 @@
 import React from "react";
 
 import { Button } from "components/Button";
+import { GlobalConfigContext } from "context/GlobalConfig";
 
 import styles from "./Hero.module.scss";
 
 export const Hero = () => {
+    const { language } = React.useContext(GlobalConfigContext);
+
+    const getResumeLink = () => `/resume/${language}/resume.pdf`;
+
     return (
         <section className={styles.root}>
-            <h1 className={styles.heroTitle}>
-                I'm Evgenii Frolov, Front-end Developer.
-            </h1>
+            <h3 className={styles.heroTitle}>Hi, my name is Evgenii Frolov.</h3>
             <p className={styles.description}>
-                I specialize in rapidly building software companies and web
-                applications. I talk about my journey on Twitter, commit code to
-                Github, and take shots on Dribbble.
+                I'm an{" "}
+                <span className={styles.profession}>Front-end Developer.</span>{" "}
+                I specialize in building web applications and making 3D
+                animations.
             </p>
             <div>
                 <Button
@@ -23,7 +27,14 @@ export const Hero = () => {
                 >
                     Say Hello
                 </Button>
-                <Button variant="primary">Resume</Button>
+                <Button
+                    component="a"
+                    href={getResumeLink()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Resume
+                </Button>
             </div>
         </section>
     );

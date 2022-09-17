@@ -14,4 +14,5 @@ export * from "./React";
 export * from "./TypeScript";
 export * from "./Webpack";
 export * from "./Instagram";
+export * from "./Language";
 export * from "./icons.types";

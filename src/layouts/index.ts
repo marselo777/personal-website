@@ -1,2 +1,1 @@
-export * from "./Layout.types";
-export * from "./Layout";
+export * from "./BaseLayout";

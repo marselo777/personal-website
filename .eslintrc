@@ -21,18 +21,9 @@
                 ],
                 "pathGroups": [
                     {
-                        "pattern": "{common,customerWidget}/**",
-                        "group": "external",
-                        "position": "after"
-                    },
-                    {
                         "pattern": "config/**",
                         "group": "internal",
                         "position": "before"
-                    },
-                    {
-                        "pattern": "{store,services,mappings,entities}/**",
-                        "group": "internal"
                     },
                     {
                         "pattern": "{layouts,containers,components,context}/**",

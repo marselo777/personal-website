@@ -1,0 +1,62 @@
+.root {
+    position: relative;
+}
+
+.activeLanguage {
+    display: flex;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--green);
+    }
+}
+
+.lngIcon {
+    margin-right: 8px;
+}
+
+.languagesList {
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    color: var(--black);
+    left: -20px;
+    right: 0;
+    top: 25px;
+    padding: 8px 0;
+    border-radius: 4px;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px 0px;
+    max-height: 80vh;
+    min-width: 100px;
+    transform: translateY(-15px);
+    transition: all .2s;
+}
+
+.languageItem {
+    cursor: pointer;
+    padding: 6px;
+    margin-bottom: 4px;
+
+    &:hover {
+       background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+    color: var(--gray);
+
+    &:hover {
+        background-color: unset;
+     }
+}
+
+.listActive {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}

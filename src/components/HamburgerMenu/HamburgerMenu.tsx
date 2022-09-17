@@ -1,11 +1,12 @@
 import cn from "classnames";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import styles from "./HamburgerMenu.module.scss";
 import { HamburgerMenuProps } from "./HamburgerMenu.types";
 
 export const HamburgerMenu = (props: HamburgerMenuProps) => {
+    const menuRef = useRef<HTMLDivElement>(null);
     const [isOpen, setOpen] = useState(false);
     const { links } = props;
 
@@ -22,8 +23,24 @@ export const HamburgerMenu = (props: HamburgerMenuProps) => {
         }
     }, [isOpen]);
 
+    useEffect(() => {
+        const handler = (event: MouseEvent | TouchEvent) => {
+            if (menuRef.current) {
+                !menuRef.current.contains(event.target as HTMLElement) &&
+                    setOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handler);
+        document.addEventListener("touchstart", handler);
+        return () => {
+            document.removeEventListener("mousedown", handler);
+            document.removeEventListener("touchstart", handler);
+        };
+    }, []);
+
     return (
-        <div className={cn(styles.root)}>
+        <div className={cn(styles.root)} ref={menuRef}>
             <div className={styles.hamburgerBox} onClick={toogle}>
                 <div
                     className={cn(styles.hamburger, {

@@ -13,7 +13,7 @@ export const SocialSideBar = (props: SocialSideBarProps) => {
             <ul className={styles.root}>
                 {socialLinks.map(({ name, url }) => (
                     <li key={name}>
-                        <a href={url}>
+                        <a href={url} target="_blank">
                             <Icon iconName={name} className={styles.icon} />
                         </a>
                     </li>

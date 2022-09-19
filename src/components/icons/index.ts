@@ -15,4 +15,5 @@ export * from "./TypeScript";
 export * from "./Webpack";
 export * from "./Instagram";
 export * from "./Language";
+export * from "./Telegram";
 export * from "./icons.types";

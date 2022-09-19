@@ -1,5 +1,5 @@
 export interface SocialMediaLink {
-    name: "Git" | "Twitter" | "LinkedIn" | "Instagram";
+    name: "Git" | "Twitter" | "LinkedIn" | "Instagram" | "Telegram";
     url: string;
 }
 
@@ -16,16 +16,12 @@ export const metadata: Metadata = {
             url: "https://github.com/marselo777",
         },
         {
-            name: "Twitter",
-            url: "https://vk.com/slenter777",
-        },
-        {
             name: "LinkedIn",
-            url: "https://vk.com/slenter777",
+            url: "https://www.linkedin.com/in/evgeny-frolov-6925bb224/",
         },
         {
-            name: "Instagram",
-            url: "https://vk.com/slenter777",
+            name: "Telegram",
+            url: "https://telegram.me/slenter777",
         },
     ],
 };

@@ -49,6 +49,7 @@
   color: var(--gray);
   font-size: clamp(24px, 5vw, 32px);
   white-space: nowrap;
+  margin-bottom: 24px;
   &::after {
       content: "";
       display: block;

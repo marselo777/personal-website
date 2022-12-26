@@ -37,7 +37,7 @@ export const About = () => {
                         like to improve work efficiency and, first of all, focus
                         on the end user of the product. So, throughout my
                         career, I have worked in large companies and know a lot
-                        about high-load projects. If you have an intresting
+                        about high-load projects. If you have an interesting
                         project we could be work together:)
                     </Typography>
                 </div>

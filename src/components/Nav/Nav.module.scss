@@ -5,6 +5,9 @@
     display: inline-block;
     margin-right: 30px;
     color: var(--color-gray-text);
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .link {

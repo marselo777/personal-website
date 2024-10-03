@@ -3,7 +3,7 @@ date: '02-12-2021'
 title: 'Front-End Developer'
 company: 'Impress'
 location: 'Spain, Barcelona'
-range: 'December 2021 - Present'
+range: 'December 2021 - June 2023'
 url: 'https://smile2impress.com'
 ---
 - Development of medical products on React, Redux, TypeScript, Redux Observable and Node.JS;
